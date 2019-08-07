@@ -1,7 +1,9 @@
 # json_export
 Formats a SQL result set in a JSON format.  Built and tested for MySQL and MemSQL.  This exports whole tables only.  If you want to select only certain rows, filter results, or use a LIMIT,  use a view.  
 
-usage : `call json_export([table name]);` # note, it will be looking for the table in the client's currently seleted database.  Do a `use otherDB;` and execute from there.  
+usage : `call json_export([table name]);` 
+
+NOTE, it will be looking for the table in the client's currently seleted database.  Do a `use otherDB;` and execute from there.  
 
 ```
 memsql> select * from employee;
